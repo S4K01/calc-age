@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
-    <!-- Add this in your HTML <head> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta property="og:title" content="The calculate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta
+      property="og:image"
+      content="https://imgs.search.brave.com/8Op6o3oLV0-n4_Na5Taa6HtB_sjBajSR2LWeZYE2z84/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni81OTMxLzU5MzE0/NTMucG5nP3NlbXQ9/YWlzX3doaXRlX2xh/YmVs"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap"
@@ -17,7 +23,15 @@
     <div class="myForm">
       <h1>calculate your age right now</h1>
       <form class="form" id="myForm">
-        <input type="text" name="user" minlength="3" maxlength="15" id="user" placeholder="Write Your Name" required />
+        <input
+          type="text"
+          name="user"
+          minlength="3"
+          maxlength="15"
+          id="user"
+          placeholder="Write Your Name"
+          required
+        />
         <input type="date" id="birth" class="birth" name="date" required />
         <button type="submit" onclick="">CALCULATE AGE</button>
       </form>

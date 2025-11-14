@@ -82,6 +82,8 @@ body {
 }
 
 .myForm input {
+  margin-inline: auto;
+  width: 260px;
   margin-bottom: 20px;
   font-family: var(--font-inputs);
   background-color: #0d1128;
