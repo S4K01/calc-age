@@ -1,0 +1,145 @@
+:root {
+  /* Colors */
+  --primary-color: #00f7ffe2; /* Cyan neon */
+  --primary-color1: #33a7ab; /* Cyan neon */
+  --secondary-color: #ff10f0; /* Pink neon */
+  --background: #0a0e27; /* Very dark blue */
+  --card-background: #151932; /* Dark card */
+  --text-color: #e0e6ed; /* Light text */
+  --border-color: #2a3f5f; /* Dark border */
+  --glow: 0 0 10px var(--primary-color1);
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 245, 255, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 245, 255, 0.3);
+  --shadow-lg: 0 10px 20px rgba(0, 245, 255, 0.4);
+
+  /* Fonts */
+
+  --font-title: "Orbitron", sans-serif;
+  --font-labels: "Rajdhani", sans-serif;
+  --font-inputs: "Space Mono", monospace;
+  --font-button: "Orbitron", sans-serif;
+  --font-result: "Rajdhani", sans-serif;
+
+  /* Font sizes */
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.myForm {
+  background-color: var(--card-background);
+  width: 300px;
+  height: 500px;
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--glow);
+  padding: var(--spacing-sm);
+  margin: 20px auto;
+}
+
+.myForm h1 {
+  font-size: var(--font-xl);
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: var(--font-title);
+}
+
+.myForm {
+  display: grid;
+}
+
+.form {
+  margin: 40px 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 16px;
+}
+
+.myForm input {
+  margin-bottom: 20px;
+  font-family: var(--font-inputs);
+  background-color: #0d1128;
+  border: 1px solid cyan;
+  color: var(--text-color);
+  outline: none;
+  padding: var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  -webkit-border-radius: var(--spacing-sm);
+  -moz-border-radius: var(--spacing-sm);
+  -ms-border-radius: var(--spacing-sm);
+  -o-border-radius: var(--spacing-sm);
+}
+
+.myForm input:focus {
+  border: 3px solid cyan;
+  box-shadow: var(--glow);
+}
+
+.myForm button {
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  margin: auto auto;
+  border: none;
+  font-family: var(--font-button);
+  background-image: linear-gradient(to left, #4accd0, #8a268a);
+  box-shadow: -1px 2px 4px 1px #00f5ff, 1px -2px 4px 1px #ff10ff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: 0.1s 0s linear;
+  -webkit-transition: 0.1s 0s linear;
+  -moz-transition: 0.1s 0s linear;
+  -ms-transition: 0.1s 0s linear;
+  -o-transition: 0.1s 0s linear;
+}
+
+.myForm button:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.myForm #result {
+  width: 250px;
+  padding: 15px;
+  margin: 10px auto 100px auto;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--font-result);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

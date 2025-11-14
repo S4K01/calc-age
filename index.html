@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Add this in your HTML <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="myForm">
+      <h1>calculate your age right now</h1>
+      <form class="form" id="myForm">
+        <input type="text" name="user" minlength="3" maxlength="15" id="user" placeholder="Write Your Name" required />
+        <input type="date" id="birth" class="birth" name="date" required />
+        <button type="submit" onclick="">CALCULATE AGE</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
