@@ -27,7 +27,7 @@ function calculateAge(birthDate) {
 // Examples of how to use it:
 // console.log(calculateAge("1990-05-15"));
 
-const myAge = calculateAge();
+const myAge = calculateAge("1960-05-15");
 console.log(`I am ${myAge} years old`);
 
 

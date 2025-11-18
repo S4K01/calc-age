@@ -33,7 +33,25 @@
           required
           autofocus
         />
-        <input type="date" id="birth" class="birth" name="date" placeholder="Select The Date" required />
+        <div class="dateinput">
+          <input
+            type="date"
+            id="birth"
+            class="birth"
+            name="date"
+            placeholder="Select The Date"
+            required
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            fill="currentColor"
+          >
+            <path
+              d="M400 64h-48V24c0-13.3-10.7-24-24-24s-24 10.7-24 24v40H144V24c0-13.3-10.7-24-24-24S96 10.7 96 24v40H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 400H48V192h352v272z"
+            />
+          </svg>ا
+        </div>
         <button type="submit">CALCULATE AGE</button>
       </form>
       <div id="result"></div>

@@ -81,7 +81,7 @@ body {
   gap: 16px;
 }
 
-.myForm input {
+.form input {
   margin-inline: auto;
   width: 260px;
   margin-bottom: 20px;
@@ -98,12 +98,50 @@ body {
   -o-border-radius: var(--spacing-sm);
 }
 
-.myForm input:focus {
+.form input:focus {
   border: 3px solid cyan;
   box-shadow: var(--glow);
 }
 
-.myForm button {
+.form input:focus-within::placeholder {
+  color: transparent;
+}
+
+.dateinput {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form .dateinput input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; /* hide default icon */
+  display: block; /* ensures clickable area remains */
+  cursor: pointer;
+  position: relative;
+  right: -5px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.dateinput svg {
+  width: 22px;
+  height: 22px;
+  fill: #00f5ff;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transform: translate(-50% , -5%);
+  -webkit-transform: translate(-50% , -5%);
+  -moz-transform: translate(-50% , -5%);
+  -ms-transform: translate(-50% , -5%);
+  -o-transform: translate(-50% , -5%);
+}
+
+.form button {
   color: #ffffff;
   cursor: pointer;
   padding: 10px;
@@ -126,7 +164,7 @@ body {
   -o-transition: 0.1s 0s linear;
 }
 
-.myForm button:hover {
+.form button:hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
