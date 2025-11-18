@@ -55,7 +55,7 @@ body {
 .myForm {
   background-color: var(--card-background);
   width: 300px;
-  height: 500px;
+  height: 535px;
   border: 1px solid var(--primary-color);
   box-shadow: var(--glow);
   padding: var(--spacing-sm);
